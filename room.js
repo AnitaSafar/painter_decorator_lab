@@ -4,7 +4,7 @@ const Room = function(area, painted = false) {
 };
 
 Room.prototype.paint = function() {
-
+   this.painted = true;
 };
 
 module.exports = Room;

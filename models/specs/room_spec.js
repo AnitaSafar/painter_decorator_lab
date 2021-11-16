@@ -4,7 +4,7 @@ const Room = require("../../room.js");
 describe('Room', function() {
     let room;
 
-    this.beforeEach(function() {
+    beforeEach(function() {
         room = new Room("20", false)
     });
 
@@ -17,5 +17,11 @@ describe('Room', function() {
         const actual = room.painted;
         assert.strictEqual(actual, false);
     });
+
+    // it("should now be painted", function() {
+    //     const actual = room.painted;
+    //     room.paint();
+    //     assert.strictEqual(actual, true);
+    // });
 
 });
